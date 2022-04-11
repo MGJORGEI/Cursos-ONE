@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<script>
+
+// En este ejemplo podemos ver como se crea y se llama una funcion y tambien el llamar una funcion dentro de otra funcion.
+
+    function saltarlinea(){
+    
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    function imprimir (frase) {
+
+        document.write(frase)
+        saltarlinea();
+    }
+
+    var anho = 2022
+
+
+    imprimir("Juan tiene: " + (anho-2000) + " años ");
+
+    imprimir("Pedro tiene: " + (anho-1995) + " años ");
+
+    var anho = 2030
+
+    imprimir("Carlos tiene: " + (anho-2005) + " años ");
+</script>
