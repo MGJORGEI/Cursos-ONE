@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<h1>Programa Año mundial de la FIFA</h1>
+
+
+<script>
+    // En este programa utilziamos la while 
+
+    function saltarlinea()   {
+    
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+}
+
+    function imprimir(frase) {
+
+        document.write(frase)
+        saltarlinea();
+}
+
+var anhomundial = 1930;
+var limite = parseInt(prompt("Inglese el año En el que se encuentra"));
+
+    imprimir("A continuacion muestro los años en los que hubo mundial");
+while (anhomundial <= limite) {
+
+    
+    imprimir ("Hubo mundial de la FIFA en el año " + anhomundial);
+
+anhomundial = anhomundial + 4;
+
+}
+
+</script>
