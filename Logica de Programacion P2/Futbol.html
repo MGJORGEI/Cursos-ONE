@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<!-- BY JORGE MONTERO -->
+<h1>Programa Calcular los puntos para un equipo de futbol</h1>
+
+<script>
+    // en este programa aprendemos utilizar parseInt
+    function saltarlinea()   {
+    
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+}
+
+    function imprimir(frase) {
+
+        document.write(frase)
+        saltarlinea();
+    }
+
+var victorias = parseInt (prompt ("Informe la cantidad de Victorias"));
+var empates = parseInt (prompt ("Informe la cantidad de empates"));
+
+puntostotal = victorias * 3 + empates;
+
+imprimir("El total de puntos de equipo es: " + puntostotal);
+
+</script>

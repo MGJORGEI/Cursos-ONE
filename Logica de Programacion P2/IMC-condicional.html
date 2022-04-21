@@ -1,0 +1,70 @@
+<meta charset="UTF-8">
+<!-- BY JORGE MONTERO -->
+<h1>Programa Calcular IMC</h1>
+
+<script>
+    
+    function saltarlinea()   {
+    
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+}
+
+    function imprimir(frase) {
+
+        document.write(frase)
+        saltarlinea();
+}
+
+    function calcularIMC(peso,altura)  {
+
+        return (peso / (altura * altura));
+
+        
+}
+
+    nombre  = prompt ("Informe su Nombre");
+    pesoinformado = prompt (nombre + ", informe su peso");
+    alturainformado = prompt (nombre + ", informe su altura");
+
+    IMCcalculado = calcularIMC (pesoinformado,alturainformado);
+
+    imprimir(nombre + ", su imc calculado es: " + IMCcalculado );
+
+if (IMCcalculado < 18.5){
+
+    imprimir("Te encuentras Bajo de Peso")
+
+}
+
+if (IMCcalculado > 18.5) if (IMCcalculado < 24.9) {
+
+    imprimir("Te encuentras Intervalo Normal")
+    
+} 
+
+else {
+
+    if (IMCcalculado >= 25) 
+    
+    imprimir("Te encuentras Sobre peso")
+
+
+} 
+
+
+
+// if (IMCcalculado < 18.5){
+
+// imprimir("Te encuentras Bajo de Peso")
+
+// }
+// if (IMCcalculado < 18.5){
+
+// imprimir("Te encuentras Bajo de Peso")
+
+// }
+
+</script>
